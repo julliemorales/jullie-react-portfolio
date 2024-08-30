@@ -159,7 +159,7 @@ function runDelaunay(canvas) {
 
         // Animation loop
         (function animloop() {
-            // requestAnimFrame(animloop);
+            requestAnimFrame(animloop);
             resize();
             render();
         })();
