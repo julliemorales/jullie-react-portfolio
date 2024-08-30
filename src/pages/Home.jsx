@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import Layout from './Layout';
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
-
+import myProfileImage from '../assets/img/jullie-img.png';
 import runDelaunay from '../utils/delaunayBackground';
 
 // TODO: Import images directly
@@ -25,7 +25,7 @@ const Home = () => {
                 <div className="flex gap-[30px] flex-col md:flex-row items-center md:items-start">
                     <div>
                         <img
-                            src="/src/assets/img/jullie-img.png"
+                            src={myProfileImage}
                             alt="Jullie Image"
                         />
                     </div>

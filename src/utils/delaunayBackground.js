@@ -4,7 +4,7 @@ function runDelaunay(canvas) {
     var particleCount = 40;
     var flareCount = 10;
     var motion = 0.05;
-    var tilt = 0.05;
+    // var tilt = 0.05;
     var color = '#FFDFE0';
     var particleSizeBase = 1;
     var particleSizeMultiplier = 0.5;
@@ -27,7 +27,7 @@ function runDelaunay(canvas) {
     var flicker = true;
     var flickerSmoothing = 15; // higher = smoother flicker
     var blurSize = 0;
-    var orbitTilt = true;
+    // var orbitTilt = true;
     var randomMotion = true;
     var noiseLength = 1000;
     var noiseStrength = 1;
@@ -35,13 +35,13 @@ function runDelaunay(canvas) {
     //orbits = document.getElementById('orbits'),
     const context = canvas.getContext('2d');
     let mouse = { x: 0, y: 0 };
-    let m = {};
-    let r = 0;
+    // let m = {};
+    // let r = 0;
     let c = 1000; // multiplier for delaunay points, since floats too small can mess up the algorithm
     let n = 0;
     let nAngle = (Math.PI * 2) / noiseLength;
     let nRad = 100;
-    let nScale = 0.5;
+    // let nScale = 0.5;
     let nPos = { x: 0, y: 0 };
     let points = [];
     let vertices = [];
@@ -103,7 +103,12 @@ function runDelaunay(canvas) {
                 k = triangles[j].indexOf(i);
                 // If it is, add its neighbors to the particles contacts list
                 if (k !== -1) {
-                    triangles[j].forEach(function (value, index, array) {
+                    // triangles[j].forEach(function (value, index, array) {
+                    //     if (value !== i && particles[i].neighbors.indexOf(value) == -1) {
+                    //         particles[i].neighbors.push(value);
+                    //     }
+                    // });
+                    triangles[j].forEach(function (value) {
                         if (value !== i && particles[i].neighbors.indexOf(value) == -1) {
                             particles[i].neighbors.push(value);
                         }
@@ -154,7 +159,7 @@ function runDelaunay(canvas) {
 
         // Animation loop
         (function animloop() {
-            requestAnimFrame(animloop);
+            // requestAnimFrame(animloop);
             resize();
             render();
         })();
