@@ -3,10 +3,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from '../components/Navbar';
 import Layout from './Layout';
 import { Link } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
+
+import runDelaunay from '../utils/delaunayBackground';
 
 // TODO: Import images directly
 
 const Home = () => {
+    const canvasRef = useRef(null);
+
+    useEffect(() => {
+        if (canvasRef.current) {
+            runDelaunay(canvasRef.current);
+        }
+    }, []);
+
     return (
         <Layout>
             <Navbar />
@@ -41,7 +52,6 @@ const Home = () => {
                                     download
                                 >
                                     <div>Download my CV</div>
-                                    {/* <i className="fa-solid fa-download" /> */}
                                     <FontAwesomeIcon
                                         icon={faDownload}
                                         className="text-[16px]"
@@ -64,7 +74,6 @@ const Home = () => {
                         download
                     >
                         <div>Download my CV</div>
-                        {/* <i className="fa-solid fa-download" /> */}
                         <FontAwesomeIcon
                             icon={faDownload}
                             className="text-[16px]"
@@ -121,7 +130,6 @@ const Home = () => {
                                         href="https://lp.mari-fortune.jp"
                                     >
                                         <p className="font-semibold">Website</p>
-                                        {/* <i className="fa-solid fa-arrow-up-right-from-square" /> */}
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
                                 </div>
@@ -131,7 +139,6 @@ const Home = () => {
                                         href="#"
                                     >
                                         <p className="font-semibold">Figma File</p>
-                                        {/* <i className="fa-solid fa-arrow-up-right-from-square" /> */}
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
                                 </div>
@@ -164,7 +171,6 @@ const Home = () => {
                                         href="https://purpledingo3.sakura.ne.jp/iahome/"
                                     >
                                         <p className="font-semibold">Website</p>
-                                        {/* <i className="fa-solid fa-arrow-up-right-from-square" /> */}
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
                                 </div>
@@ -174,7 +180,6 @@ const Home = () => {
                                         href="#"
                                     >
                                         <p className="font-semibold">Figma File</p>
-                                        {/* <i className="fa-solid fa-arrow-up-right-from-square" /> */}
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
                                 </div>
@@ -208,7 +213,6 @@ const Home = () => {
                                         href="#"
                                     >
                                         <p className="font-semibold">Website</p>
-                                        {/* <i className="fa-solid fa-arrow-up-right-from-square" /> */}
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
                                 </div>
@@ -218,7 +222,6 @@ const Home = () => {
                                         href="#"
                                     >
                                         <p className="font-semibold">Figma File</p>
-                                        {/* <i className="fa-solid fa-arrow-up-right-from-square" /> */}
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
                                 </div>
@@ -239,7 +242,12 @@ const Home = () => {
                 className="relative w-full d-none"
                 id="#experiences"
             >
-                <canvas id="stars"> </canvas>
+                <canvas
+                    id="stars"
+                    ref={canvasRef}
+                >
+                    {' '}
+                </canvas>
                 <div className="absolute top-0 left-0 right-0 w-[80%] mx-auto my-0 p-0">
                     <div className="py-[200px] flex flex-col gap-[100px]">
                         <h2 className="text-4xl font-medium text-[#FFDFE0]">
