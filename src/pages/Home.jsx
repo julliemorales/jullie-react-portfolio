@@ -18,6 +18,8 @@ import psLogo from '../assets/img/ps.png'
 import aiLogo from '../assets/img/ai.png'
 import linkedIn from '../assets/img/linkedin.svg'
 import vid01 from '../assets/vid/mari-fortune.webm'
+import vid02 from '../assets/vid/iahome.webm'
+import vid03 from '../assets/vid/nagoya-sumiya.webm'
 import runDelaunay from '../utils/delaunayBackground';
 
 // TODO: Import images directly
@@ -163,7 +165,7 @@ const Home = () => {
                             <video
                                 width={600}
                                 height={300}
-                                src="/src/assets/vid/iahome.webm"
+                                src={vid02}
                                 autoPlay
                             />
                         </div>
@@ -204,7 +206,7 @@ const Home = () => {
                             <video
                                 width={600}
                                 height={300}
-                                src="/src/assets/vid/nagoya-sumiya.webm"
+                                src={vid03}
                                 autoPlay
                             />
                         </div>
