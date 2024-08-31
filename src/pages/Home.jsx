@@ -21,6 +21,7 @@ import vid01 from '../assets/vid/mari-fortune.webm'
 import vid02 from '../assets/vid/iahome.webm'
 import vid03 from '../assets/vid/nagoya-sumiya.webm'
 import runDelaunay from '../utils/delaunayBackground';
+import pdf from '../assets/files/JULLIE_ANGELI_S_MORALES.pdf'
 
 // TODO: Import images directly
 
@@ -63,7 +64,8 @@ const Home = () => {
                             <div className="flex items-center gap-[20px] hidden lg:flex">
                                 <a
                                     className="flex items-center gap-[10px] px-[20px] py-[10px] border border-solid border-[#333333] hover:bg-[#333333] hover:text-[#FFDFE0]"
-                                    href="/JULLIE_ANGELI_S_MORALES.pdf"
+                                    href={pdf}
+                                    target="_blank"
                                     download
                                 >
                                     <div>Download my CV</div>
@@ -85,7 +87,8 @@ const Home = () => {
                 <div className="flex items-center gap-[20px] lg:hidden">
                     <a
                         className="flex items-center gap-[10px] px-[20px] py-[10px] border border-solid border-[#333333] hover:bg-[#333333] hover:text-[#FFDFE0]"
-                        href="/JULLIE_ANGELI_S_MORALES.pdf"
+                        href={pdf}
+                        target="_blank"
                         download
                     >
                         <div>Download my CV</div>
