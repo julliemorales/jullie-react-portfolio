@@ -2,6 +2,7 @@ import { faDownload, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import linkedIn from '../assets/img/linkedin.svg'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -107,18 +108,17 @@ const Navbar = () => {
                                     My Experiences
                                 </a>
                                 <a
-                                    className={`flex d-flex items-center gap-[10px] px-[20px] py-[10px] border border-solid border-[#FFDFE0]"
-}                                        href="./files/JULLIE ANGELI S. MORALES.pdf ${
-                                        isOpen ? 'open' : ''
-                                    }`}
+                                    className={`flex d-flex items-center justify-center gap-[10px] px-[20px] py-[10px] border border-solid border-[#FFDFE0]
+}                                               ${isOpen ? 'open' : ''}`}
+                                    href="mailto:jullieangelimorales05@gmail.com"
                                     download
                                 >
-                                    <div className="text-[16px]">Download my CV</div>
-                                    {/* <i className="text-[16px] fa-solid fa-download" /> */}
                                     <FontAwesomeIcon
-                                        icon={faDownload}
+                                        icon={faEnvelope}
                                         className="text-[16px]"
                                     />
+                                    <div className="text-[16px]">Contact Me</div>
+                                    {/* <i className="text-[16px] fa-solid fa-download" /> */}
                                 </a>
                                 <a
                                     href="https://www.linkedin.com/in/moralesjullie/"
@@ -127,7 +127,7 @@ const Navbar = () => {
                                 >
                                     <img
                                         className="filter-pink"
-                                        src="/src/assets/img/linkedin.svg"
+                                        src={linkedIn}
                                         alt="LinkedIn"
                                     />
                                 </a>

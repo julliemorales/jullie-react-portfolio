@@ -63,7 +63,7 @@ const Home = () => {
                             <div className="flex items-center gap-[20px] hidden lg:flex">
                                 <a
                                     className="flex items-center gap-[10px] px-[20px] py-[10px] border border-solid border-[#333333] hover:bg-[#333333] hover:text-[#FFDFE0]"
-                                    href="./files/JULLIE ANGELI S. MORALES.pdf"
+                                    href="/JULLIE_ANGELI_S_MORALES.pdf"
                                     download
                                 >
                                     <div>Download my CV</div>

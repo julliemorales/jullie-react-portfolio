@@ -40,6 +40,7 @@ import logo06 from '../assets/img/logo06.png'
 import banner01 from '../assets/img/banner01.png'
 import banner02 from '../assets/img/banner02.png'
 import banner03 from '../assets/img/banner03.webp'
+import linkedIn from '../assets/img/linkedin.svg'
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
@@ -66,9 +67,9 @@ const Projects = () => {
         <Layout>
             <header className="border-b border-solid border-[#333333] w-[100%]">
                 <div className="flex mx-[100px] my-[30px] justify-between items-center">
-                    <p className="px-[10px] py-[5px] lg:px-[20px] lg:py-[10px] border border-solid border-[#333333] text-2xl hover:bg-[#B16064] hover:text-[#FFDFE0]">
+                    <Link className="px-[10px] py-[5px] lg:px-[20px] lg:py-[10px] border border-solid border-[#333333] text-2xl hover:bg-[#B16064] hover:text-[#FFDFE0]" to="/">
                         jullie angeli.
-                    </p>
+                    </Link>
                     <div className="flex gap-[60px]">
                         <ul className="flex gap-[60px] items-center">
                             <li>
@@ -117,9 +118,9 @@ const Projects = () => {
             </header>
             <nav className="border-b border-solid border-[#333333] w-[100vw] bg-nav">
                 <div className="navWrapper">
-                    <p className="px-[10px] py-[5px] lg:px-[20px] lg:py-[10px] text-xs lg:text-2xl border border-solid border-[#333333] hover:bg-[#B16064] hover:text-[#FFDFE0] sm:text-base">
+                    <Link className="px-[10px] py-[5px] lg:px-[20px] lg:py-[10px] text-xs lg:text-2xl border border-solid border-[#333333] hover:bg-[#B16064] hover:text-[#FFDFE0] sm:text-base" to="/">
                         jullie angeli.
-                    </p>
+                    </Link>
                     <div className="right">
                         <div
                             id="nav-icon"
@@ -150,18 +151,17 @@ const Projects = () => {
                                     My Skills
                                 </Link>
                                 <a
-                                    className={`flex d-flex items-center gap-[10px] px-[20px] py-[10px] border border-solid border-[#FFDFE0]"
-}                                        href="./files/JULLIE ANGELI S. MORALES.pdf ${
-                                        isOpen ? 'open' : ''
-                                    }`}
+                                    className={`flex d-flex items-center justify-center gap-[10px] px-[20px] py-[10px] border border-solid border-[#FFDFE0]
+}                                               ${isOpen ? 'open' : ''}`}
+                                    href="mailto:jullieangelimorales05@gmail.com"
                                     download
                                 >
-                                    <div className="text-[16px]">Download my CV</div>
-                                    {/* <i className="text-[16px] fa-solid fa-download" /> */}
                                     <FontAwesomeIcon
-                                        icon={faDownload}
+                                        icon={faEnvelope}
                                         className="text-[16px]"
                                     />
+                                    <div className="text-[16px]">Contact Me</div>
+                                    {/* <i className="text-[16px] fa-solid fa-download" /> */}
                                 </a>
                                 <a
                                     href="https://www.linkedin.com/in/moralesjullie/"
@@ -169,7 +169,7 @@ const Projects = () => {
                                 >
                                     <img
                                         className="filter-pink"
-                                        src="/src/assets/img/linkedin.svg"
+                                        src={linkedIn}
                                         alt="LinkedIn"
                                     />
                                 </a>
