@@ -26,14 +26,14 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className='flex justify-center items-center gap-[60px]'>
-                            <a href="https://www.linkedin.com/in/moralesjullie/">
+                            <a href="https://www.linkedin.com/in/moralesjullie/" target='_blank'>
                                 <img
                                     src={linkedIn}
                                     alt="LinkedIn"
                                     className='w-[30px]'
                                 />
                             </a>
-                            <a href="https://github.com/julliemorales">
+                            <a href="https://github.com/julliemorales" target='_blank'>
                                 <img
                                     src={gitHub}
                                     alt="Github"

@@ -74,7 +74,7 @@ const Home = () => {
                                         className="text-[16px]"
                                     />
                                 </a>
-                                <a href="https://www.linkedin.com/in/moralesjullie/">
+                                <a href="https://www.linkedin.com/in/moralesjullie/" target='_blank'>
                                     <img
                                     src={linkedIn}
                                     alt="LinkedIn"
@@ -97,7 +97,7 @@ const Home = () => {
                             className="text-[16px]"
                         />
                     </a>
-                    <a href="https://www.linkedin.com/in/moralesjullie/">
+                    <a href="https://www.linkedin.com/in/moralesjullie/" target='_blank'>
                         <img
                             src={linkedIn}
                             alt="LinkedIn"
