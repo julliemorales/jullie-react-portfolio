@@ -7,7 +7,7 @@ import Layout from './Layout';
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 import myProfileImage from '../assets/img/jullie-img.png';
-import cert from '../assets/img/cert.png';
+import certification from '../assets/img/certification.png';
 import figmaLogo from '../assets/img/figma.png'
 import htmlLogo from '../assets/img/html.png'
 import cssLogo from '../assets/img/css.png'
@@ -304,7 +304,7 @@ const Home = () => {
                             <div className="flex flex-col gap-[20px]">
                                 <img
                                     className="w-[30vw]"
-                                    src={cert}
+                                    src={certification}
                                     alt="KodeGo Certificate"
                                 />
                                 <div className="flex flex-col gap-[20px]">
