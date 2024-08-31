@@ -115,24 +115,24 @@ const Home = () => {
                 id="projects"
             >
                 <div>
-                    <h2 className="text-4xl font-medium">
+                    <h2 className="text-xl lg:text-4xl font-medium">
                         My <span className="text-[#B16064]">Projects.</span>
                     </h2>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-[60px] lg:px-[200px] lg:border-x lg:border-solid lg:border-[#333333]">
                     <div className="flex flex-col justify-center items-center gap-[30px] max-w-[600px] pb-[60px] border-b border-solid border-[#b0b0b0]">
-                        <div className="w-[90vw] lg:w-[100%]">
+                        <div className="lg:w-[100%]">
                             <video
-                                width={600}
+                                className='w-[80vw] lg:w-[600px] flex justify-center'
                                 height={300}
                                 src={vid01}
                                 autoPlay
                             />
                         </div>
                         <div className="flex flex-col justify-center items-center gap-[30px]">
-                            <div className="flex flex-col justify-center items-center gap-[10px] max-w-[90vw]">
+                            <div className="flex flex-col justify-center items-center gap-[10px] max-w-[80vw]">
                                 <p className="font-semibold">Mari Fortune Landing Page</p>
-                                <p className="text-center font-light">
+                                <p className="text-center font-light text-[12px] lg:text-[16px]">
                                     A landing page for a Tarot reading business in Japan. Its
                                     primary purpose is to support marketing and advertising
                                     campaigns.
@@ -161,18 +161,18 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="flex flex-col justify-center items-center gap-[30px] max-w-[600px] pb-[60px] border-b border-solid border-[#b0b0b0]">
-                        <div className="w-[90vw] lg:w-[100%]">
+                        <div className="lg:w-[100%]">
                             <video
-                                width={600}
+                                className='w-[80vw] lg:w-[600px] flex justify-center'
                                 height={300}
                                 src={vid02}
                                 autoPlay
                             />
                         </div>
                         <div className="flex flex-col justify-center items-center gap-[30px]">
-                            <div className="flex flex-col justify-center items-center gap-[10px] max-w-[90vw]">
+                            <div className="flex flex-col justify-center items-center gap-[10px] max-w-[80vw]">
                                 <p className="font-semibold">IAHome</p>
-                                <p className="text-center font-light">
+                                <p className="text-center font-light text-[12px] lg:text-[16px]">
                                     An MEO website for a company that handles all types of home
                                     construction work, including kitchen, bathroom, and toilet
                                     renovations, small plumbing repairs, exterior wall painting, and
@@ -202,18 +202,18 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="flex flex-col justify-center items-center gap-[30px] max-w-[600px] pb-[60px] border-b border-solid border-[#b0b0b0]">
-                        <div className="w-[90vw] lg:w-[100%]">
+                        <div className="lg:w-[100%]">
                             <video
-                                width={600}
+                                className='w-[80vw] lg:w-[600px] flex justify-center'
                                 height={300}
                                 src={vid03}
                                 autoPlay
                             />
                         </div>
                         <div className="flex flex-col justify-center items-center gap-[30px]">
-                            <div className="flex flex-col justify-center items-center gap-[10px] max-w-[90vw]">
+                            <div className="flex flex-col justify-center items-center gap-[10px] max-w-[80vw]">
                                 <p className="font-semibold">Nagoya Sumiya</p>
-                                <p className="text-center font-light">
+                                <p className="text-center font-light text-[12px] lg:text-[16px]">
                                     A MEO website tailored for a restaurant specializing in
                                     authentic Japanese cuisine. This website is designed to enhance
                                     the restaurant&rsquo;s visibility on map-based search platforms
@@ -255,18 +255,18 @@ const Home = () => {
             </section>
             <section
                 className="relative w-full d-none"
-                id="#experiences"
+                id="experiences"
             >
                 <canvas
                     id="stars"
-                    className='h-[2000px] lg:h-[1800px]'
+                    className='h-[1500px] lg:h-[1800px]'
                     ref={canvasRef}
                 >
                     {' '}
                 </canvas>
                 <div className="absolute top-0 left-0 right-0 w-[80%] mx-auto my-0 p-0">
                     <div className="py-[200px] flex flex-col gap-[100px]">
-                        <h2 className="text-4xl font-medium text-[#FFDFE0]">
+                        <h2 className="text-xl lg:text-4xl font-medium text-[#FFDFE0]">
                             My{' '}
                             <span className="text-[#e8979b]">Experiences and Certifications.</span>
                         </h2>
@@ -274,17 +274,17 @@ const Home = () => {
                             <div className="flex flex-col gap-[20px]">
                                 <div className="flex flex-col gap-[5px]">
                                     <div className="absolute w-3 h-3 bg-pink-200 rounded-full mt-1.5 left-[-5px] border border-white border-white-200 bg-pink-200" />
-                                    <div className="font-base text-xl text-[#FFDFE0]">
+                                    <div className="font-base text-base lg:text-xl text-[#FFDFE0]">
                                         Web Designer / Junior Web Developer
                                     </div>
-                                    <div className="font-light text-[#e8979b]">
+                                    <div className="font-light text-[#e8979b] text-xs lg:text-base">
                                         Rightcore Inc. |{' '}
                                         <span className="text-[#FFDFE0] font-thin">
                                             March 2023 - Present
                                         </span>
                                     </div>
                                 </div>
-                                <ul className="font-extralight text-[#FFDFE0] list-disc flex flex-col gap-[5px] text-sm lg:text-base">
+                                <ul className="font-extralight text-[#FFDFE0] list-disc flex flex-col gap-[5px] text-xs lg:text-base">
                                     <li>
                                         Designed websites, posters, and logos using mainly Figma and
                                         sometimes Photoshop, Illustrator, and Canva by
@@ -303,24 +303,24 @@ const Home = () => {
                             </div>
                             <div className="flex flex-col gap-[20px]">
                                 <img
-                                    className="w-[30vw]"
+                                    className="w-[50vw] lg:w-[30vw]"
                                     src={certification}
                                     alt="KodeGo Certificate"
                                 />
                                 <div className="flex flex-col gap-[20px]">
                                     <div className="flex flex-col gap-[5px]">
                                         <div className="absolute w-3 h-3 bg-pink-200 rounded-full mt-1.5 left-[-5px] border border-white border-white-200 bg-pink-200" />
-                                        <div className="font-base text-xl text-[#FFDFE0]">
+                                        <div className="font-base text-base lg:text-xl text-[#FFDFE0]">
                                             Full-Stack Web Development Bootcamp
                                         </div>
-                                        <div className="font-light text-[#e8979b]">
+                                        <div className="font-light text-[#e8979b] text-xs lg:text-base">
                                             Kodego |{' '}
                                             <span className="text-[#FFDFE0] font-thin">
                                                 July 2022 - October 2022
                                             </span>
                                         </div>
                                     </div>
-                                    <ul className="font-extralight text-[#FFDFE0] list-disc flex flex-col gap-[5px] text-sm lg:text-base">
+                                    <ul className="font-extralight text-[#FFDFE0] list-disc flex flex-col gap-[5px] text-xs lg:text-base">
                                         <li>
                                             Learned the basics of HTML, CSS, VanillaJS, ReactJS,
                                             NodeJS, etc.
@@ -335,17 +335,17 @@ const Home = () => {
                             <div className="flex flex-col gap-[20px]">
                                 <div className="flex flex-col gap-[5px]">
                                     <div className="absolute w-3 h-3 bg-pink-200 rounded-full mt-1.5 left-[-5px] border border-white border-white-200 bg-pink-200" />
-                                    <div className="font-base text-xl text-[#FFDFE0]">
+                                    <div className="font-base text-base lg:text-xl text-[#FFDFE0]">
                                         Cloud Tech Support New Associate / IT Operations Associate
                                     </div>
-                                    <div className="font-light text-[#e8979b]">
+                                    <div className="font-light text-[#e8979b] text-xs lg:text-base">
                                         Accenture Philippines Inc. |{' '}
                                         <span className="text-[#FFDFE0] font-thin">
                                             October 2020 - July 2022
                                         </span>
                                     </div>
                                 </div>
-                                <ul className="font-extralight text-[#FFDFE0] list-disc flex flex-col gap-[5px] text-sm lg:text-base">
+                                <ul className="font-extralight text-[#FFDFE0] list-disc flex flex-col gap-[5px] text-xs lg:text-base">
                                     <li>Technical/Operations Support of the Client.</li>
                                     <li>Was one of the Top Performers in our team.</li>
                                     <li>
@@ -361,7 +361,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className='flex items-center justify-center flex-wrap gap-[50px] lg:gap-[60px] max-w-[80vw] lg:max-w-[1000px]'>
+            <section id="skills" className='flex items-center justify-center flex-wrap gap-[50px] lg:gap-[60px] max-w-[80vw] lg:max-w-[1000px]'>
                 <img className='h-[50px] lg-h-[100px]' src={figmaLogo} alt="Figma Logo" />
                 <img className='h-[50px] lg-h-[100px]' src={htmlLogo} alt="HTML5 Logo" />
                 <img className='h-[50px] lg-h-[100px]' src={cssLogo} alt="CSS Logo" />

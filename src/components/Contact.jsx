@@ -7,7 +7,7 @@ const Contact = () => {
 
     return (
         <section className='flex flex-col items-center justify-center gap-[60px] py-[100px] border-t border-b border-solid border-[#333333]'>
-                    <h2 className="text-4xl font-medium">
+                    <h2 className="text-xl lg:text-4xl font-medium">
                         Contact <span className="text-[#B16064]">Me.</span>
                     </h2>
                     <div className='flex flex-col items-center justify-center gap-[30px]'>

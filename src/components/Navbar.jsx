@@ -1,4 +1,4 @@
-import { faDownload, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faDownload, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -70,7 +70,7 @@ const Navbar = () => {
                             href="#"
                         >
                             {/* <i className="fa-solid fa-phone" /> */}
-                            <FontAwesomeIcon icon={faPhone} />
+                            <FontAwesomeIcon icon={faEnvelope} />
                             Contact Me
                         </a>
                     </div>
@@ -78,7 +78,7 @@ const Navbar = () => {
             </header>
             <nav className="border-b border-solid border-[#333333] w-[100vw] bg-nav">
                 <div className="navWrapper">
-                    <a href='/' className="px-[20px] py-[10px] border border-solid border-[#333333] text-2xl hover:bg-[#B16064] hover:text-[#FFDFE0] sm:text-base">
+                    <a href='/' className="px-[10px] py-[5px] lg:px-[20px] lg:py-[10px] border border-solid border-[#333333] text-xs lg:text-2xl hover:bg-[#B16064] hover:text-[#FFDFE0] sm:text-base">
                         jullie angeli.
                     </a>
                     <div className="right">
@@ -95,7 +95,7 @@ const Navbar = () => {
                                 <Link
                                     className={`${isOpen ? 'open' : ''}`}
                                     onClick={()=>setIsOpen(false)}
-                                    to="/"
+                                    to="/projects"
                                 >
                                     My Projects
                                 </Link>
