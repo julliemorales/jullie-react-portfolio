@@ -30,12 +30,14 @@ const Contact = () => {
                                 <img
                                     src={linkedIn}
                                     alt="LinkedIn"
+                                    className='w-[30px]'
                                 />
                             </a>
                             <a href="https://github.com/julliemorales">
                                 <img
                                     src={gitHub}
                                     alt="Github"
+                                    className='w-[30px]'
                                 />
                             </a>
                         </div>
