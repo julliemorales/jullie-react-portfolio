@@ -304,7 +304,7 @@ const Projects = () => {
                                 Your browser cannot play this video.
                             </video>
                         </div>
-                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44] text-xs lg:text-base" href="ivoryfoal5.sakura.ne.jp/eikogakuin" target='_blank'>
+                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44] text-xs lg:text-base" href="https://ivoryfoal5.sakura.ne.jp/eikogakuin" target='_blank'>
                             <p className="font-semibold">Eiko Gakuin Website</p>
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                         </a>
@@ -409,7 +409,7 @@ const Projects = () => {
                                 Your browser cannot play this video.
                             </video>
                         </div>
-                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44] text-xs lg:text-base" href="https://lusso-capstone-project.vercel.app/" target='_blank'>
+                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44] text-xs lg:text-base" href="https://macchan3.com/" target='_blank'>
                             <p className="font-semibold">Macchan Website</p>
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                         </a>
@@ -430,7 +430,7 @@ const Projects = () => {
                                 Your browser cannot play this video.
                             </video>
                         </div>
-                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44] text-xs lg:text-base" href="https://macchan3.com/" target='_blank'>
+                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44] text-xs lg:text-base" href="https://lusso-capstone-project.vercel.app/" target='_blank'>
                             <p className="font-semibold">Lusso Perfumes (KodeGo Capstone Project)</p>
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                         </a>

@@ -1,7 +1,3 @@
-// import { faDownload, faPhone } from '@fortawesome/free-solid-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { useCallback, useEffect, useState } from 'react';
-
 const Footer = () => {
 
     return (

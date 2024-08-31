@@ -1,4 +1,4 @@
-import { faDownload, faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -28,9 +28,9 @@ const Navbar = () => {
         <>
             <header className="border-b border-solid border-[#333333] w-[100%]">
                 <div className="flex mx-[100px] my-[30px] justify-between items-center">
-                    <a className="px-[20px] py-[10px] border border-solid border-[#333333] text-2xl hover:bg-[#B16064] hover:text-[#FFDFE0]" href='/'>
+                    <Link className="px-[20px] py-[10px] border border-solid border-[#333333] text-2xl hover:bg-[#B16064] hover:text-[#FFDFE0]" to="/">
                         jullie angeli.
-                    </a>
+                    </Link>
                     <div className="flex gap-[60px]">
                         <ul className="flex gap-[60px] items-center">
                             <li>
