@@ -96,7 +96,7 @@ const Home = () => {
                     </a>
                     <a href="https://www.linkedin.com/in/moralesjullie/">
                         <img
-                            src="/src/assets/img/linkedin.svg"
+                            src={linkedIn}
                             alt="LinkedIn"
                         />
                     </a>
