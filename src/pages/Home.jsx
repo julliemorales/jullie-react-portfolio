@@ -7,6 +7,7 @@ import Layout from './Layout';
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 import myProfileImage from '../assets/img/jullie-img.png';
+import cert from '../assets/img/cert.png';
 import figmaLogo from '../assets/img/figma.png'
 import htmlLogo from '../assets/img/html.png'
 import cssLogo from '../assets/img/css.png'
@@ -16,6 +17,7 @@ import bootstrapLogo from '../assets/img/bootstrap.png'
 import psLogo from '../assets/img/ps.png'
 import aiLogo from '../assets/img/ai.png'
 import linkedIn from '../assets/img/linkedin.svg'
+import vid01 from '../assets/vid/mari-fortune.webm'
 import runDelaunay from '../utils/delaunayBackground';
 
 // TODO: Import images directly
@@ -121,7 +123,7 @@ const Home = () => {
                             <video
                                 width={600}
                                 height={300}
-                                src="/src/assets/vid/mari-fortune.webm"
+                                src={vid01}
                                 autoPlay
                             />
                         </div>
@@ -300,7 +302,7 @@ const Home = () => {
                             <div className="flex flex-col gap-[20px]">
                                 <img
                                     className="w-[30vw]"
-                                    src="/src/assets/img/cert.PNG"
+                                    src={cert}
                                     alt="KodeGo Certificate"
                                 />
                                 <div className="flex flex-col gap-[20px]">
