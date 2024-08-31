@@ -1,5 +1,5 @@
 import Layout from './Layout';
-import { faArrowUpRightFromSquare, faDownload, faEnvelope, faLocation, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare, faDownload, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useEffect, useState } from 'react';
 import Footer from '../components/Footer';
@@ -15,6 +15,7 @@ import vid08 from '../assets/vid/fuji-aozora.webm'
 import vid09 from '../assets/vid/towanomori.webm'
 import vid10 from '../assets/vid/home-piha-hauoli.webm'
 import vid11 from '../assets/vid/lusso.webm'
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -46,36 +47,36 @@ const Projects = () => {
                     <div className="flex gap-[60px]">
                         <ul className="flex gap-[60px] items-center">
                             <li>
-                                <a
+                                <Link
                                     className="text-[#333333] hover:text-opacity-50"
-                                    href="#"
+                                    to="/"
                                 >
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     className="text-[#333333] hover:text-opacity-50"
-                                    href="#"
+                                    to="/projects"
                                 >
                                     Projects
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     className="text-[#333333] hover:text-opacity-50"
-                                    href="#"
+                                    to="/"
                                 >
                                     Experience
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     className="text-[#333333] hover:text-opacity-50"
-                                    href="#"
+                                    to="/"
                                 >
                                     Skills
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <a
@@ -105,12 +106,24 @@ const Projects = () => {
                         </div>
                         <div className={`overlay ${isOpen ? 'open' : ''}`}>
                             <div className="overlayContent">
-                                <a
-                                    href="#experiences"
+                                <Link
                                     className={`${isOpen ? 'open' : ''}`}
+                                    to="/"
+                                >
+                                    Home
+                                </Link>
+                                <Link
+                                    className={`${isOpen ? 'open' : ''}`}
+                                    to="/"
                                 >
                                     My Experiences
-                                </a>
+                                </Link>
+                                <Link
+                                    className={`${isOpen ? 'open' : ''}`}
+                                    to="/"
+                                >
+                                    My Skills
+                                </Link>
                                 <a
                                     className={`flex d-flex items-center gap-[10px] px-[20px] py-[10px] border border-solid border-[#FFDFE0]"
 }                                        href="./files/JULLIE ANGELI S. MORALES.pdf ${
@@ -144,11 +157,11 @@ const Projects = () => {
                 <h2 className="text-4xl font-medium">
                     My <span className="text-[#B16064]">Web Design Projects.</span>
                 </h2>
-                <div>
-                    <div>
+                <div className='flex flex-wrap justify-center align-center max-w-[1800px] gap-[100px]'>
+                    <div className="flex flex-col justify-center items-center gap-[30px]">
                         <div className="w-[90vw] lg:w-[100%]">
                             <video
-                                width={600}
+                                width={800}
                                 height={300}
                                 autoPlay
                                 muted
@@ -163,6 +176,216 @@ const Projects = () => {
                         </div>
                         <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]" href="https://lp.mari-fortune.jp" target='_blank'>
                             <p className="font-semibold">Mari Fortune Landing Page</p>
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                    </div>
+                    <div className="flex flex-col justify-center items-center gap-[30px]">
+                        <div className="w-[90vw] lg:w-[100%]">
+                            <video
+                                width={800}
+                                height={300}
+                                autoPlay
+                                muted
+                                loop
+                            >
+                                <source
+                                    src={vid02}
+                                    type="video/webm"
+                                />
+                                Your browser cannot play this video.
+                            </video>
+                        </div>
+                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]" href="https://lp.mari-fortune.jp" target='_blank'>
+                            <p className="font-semibold">IAHome MEO Website</p>
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                    </div>
+                    <div className="flex flex-col justify-center items-center gap-[30px]">
+                        <div className="w-[90vw] lg:w-[100%]">
+                            <video
+                                width={800}
+                                height={300}
+                                autoPlay
+                                muted
+                                loop
+                            >
+                                <source
+                                    src={vid03}
+                                    type="video/webm"
+                                />
+                                Your browser cannot play this video.
+                            </video>
+                        </div>
+                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]" href="https://lp.mari-fortune.jp" target='_blank'>
+                            <p className="font-semibold">Nagoya Sumiya MEO Website</p>
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                    </div>
+                    <div className="flex flex-col justify-center items-center gap-[30px]">
+                        <div className="w-[90vw] lg:w-[100%]">
+                            <video
+                                width={800}
+                                height={300}
+                                autoPlay
+                                muted
+                                loop
+                            >
+                                <source
+                                    src={vid04}
+                                    type="video/webm"
+                                />
+                                Your browser cannot play this video.
+                            </video>
+                        </div>
+                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]" href="https://lp.mari-fortune.jp" target='_blank'>
+                            <p className="font-semibold">L-D-H com Website</p>
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                    </div>
+                    <div className="flex flex-col justify-center items-center gap-[30px]">
+                        <div className="w-[90vw] lg:w-[100%]">
+                            <video
+                                width={800}
+                                height={300}
+                                autoPlay
+                                muted
+                                loop
+                            >
+                                <source
+                                    src={vid05}
+                                    type="video/webm"
+                                />
+                                Your browser cannot play this video.
+                            </video>
+                        </div>
+                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]" href="https://lp.mari-fortune.jp" target='_blank'>
+                            <p className="font-semibold">Meika Kensentsu Website</p>
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                    </div>
+                    <div className="flex flex-col justify-center items-center gap-[30px]">
+                        <div className="w-[90vw] lg:w-[100%]">
+                            <video
+                                width={800}
+                                height={300}
+                                autoPlay
+                                muted
+                                loop
+                            >
+                                <source
+                                    src={vid06}
+                                    type="video/webm"
+                                />
+                                Your browser cannot play this video.
+                            </video>
+                        </div>
+                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]" href="https://lp.mari-fortune.jp" target='_blank'>
+                            <p className="font-semibold">Eiko Gakuin Website</p>
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                    </div>
+                    <div className="flex flex-col justify-center items-center gap-[30px]">
+                        <div className="w-[90vw] lg:w-[100%]">
+                            <video
+                                width={800}
+                                height={300}
+                                autoPlay
+                                muted
+                                loop
+                            >
+                                <source
+                                    src={vid07}
+                                    type="video/webm"
+                                />
+                                Your browser cannot play this video.
+                            </video>
+                        </div>
+                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]" href="https://lp.mari-fortune.jp" target='_blank'>
+                            <p className="font-semibold">Gorikushi Website</p>
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                    </div>
+                    <div className="flex flex-col justify-center items-center gap-[30px]">
+                        <div className="w-[90vw] lg:w-[100%]">
+                            <video
+                                width={800}
+                                height={300}
+                                autoPlay
+                                muted
+                                loop
+                            >
+                                <source
+                                    src={vid08}
+                                    type="video/webm"
+                                />
+                                Your browser cannot play this video.
+                            </video>
+                        </div>
+                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]" href="https://lp.mari-fortune.jp" target='_blank'>
+                            <p className="font-semibold">Fuji Aozora Website</p>
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                    </div>
+                    <div className="flex flex-col justify-center items-center gap-[30px]">
+                        <div className="w-[90vw] lg:w-[100%]">
+                            <video
+                                width={800}
+                                height={300}
+                                autoPlay
+                                muted
+                                loop
+                            >
+                                <source
+                                    src={vid09}
+                                    type="video/webm"
+                                />
+                                Your browser cannot play this video.
+                            </video>
+                        </div>
+                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]" href="https://lp.mari-fortune.jp" target='_blank'>
+                            <p className="font-semibold">Towanomori Website</p>
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                    </div>
+                    <div className="flex flex-col justify-center items-center gap-[30px]">
+                        <div className="w-[90vw] lg:w-[100%]">
+                            <video
+                                width={800}
+                                height={300}
+                                autoPlay
+                                muted
+                                loop
+                            >
+                                <source
+                                    src={vid10}
+                                    type="video/webm"
+                                />
+                                Your browser cannot play this video.
+                            </video>
+                        </div>
+                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]" href="https://lp.mari-fortune.jp" target='_blank'>
+                            <p className="font-semibold">Home Piha Hau’Holi</p>
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                    </div>
+                    <div className="flex flex-col justify-center items-center gap-[30px]">
+                        <div className="w-[90vw] lg:w-[100%]">
+                            <video
+                                width={800}
+                                height={300}
+                                autoPlay
+                                muted
+                                loop
+                            >
+                                <source
+                                    src={vid11}
+                                    type="video/webm"
+                                />
+                                Your browser cannot play this video.
+                            </video>
+                        </div>
+                        <a className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]" href="https://lp.mari-fortune.jp" target='_blank'>
+                            <p className="font-semibold">Lusso Perfumes (KodeGo Capstone Project)</p>
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                         </a>
                     </div>

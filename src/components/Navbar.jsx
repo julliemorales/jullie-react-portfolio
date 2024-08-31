@@ -1,6 +1,7 @@
 import { faDownload, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -32,20 +33,20 @@ const Navbar = () => {
                     <div className="flex gap-[60px]">
                         <ul className="flex gap-[60px] items-center">
                             <li>
-                                <a
+                                <Link
                                     className="text-[#333333] hover:text-opacity-50"
-                                    href="/"
+                                    to="/"
                                 >
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     className="text-[#333333] hover:text-opacity-50"
-                                    href="/projects"
+                                    to="/projects"
                                 >
                                     Projects
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a
@@ -58,7 +59,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     className="text-[#333333] hover:text-opacity-50"
-                                    href="/"
+                                    href="#skills"
                                 >
                                     Skills
                                 </a>
@@ -91,13 +92,13 @@ const Navbar = () => {
                         </div>
                         <div className={`overlay ${isOpen ? 'open' : ''}`}>
                             <div className="overlayContent">
-                                <a
-                                    href="#projects"
+                                <Link
                                     className={`${isOpen ? 'open' : ''}`}
                                     onClick={()=>setIsOpen(false)}
+                                    to="/"
                                 >
                                     My Projects
-                                </a>
+                                </Link>
                                 <a
                                     href="#experiences"
                                     className={`${isOpen ? 'open' : ''}`}

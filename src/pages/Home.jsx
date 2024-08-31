@@ -1,4 +1,4 @@
-import { faArrowUpRightFromSquare, faDownload, faEnvelope, faLocation, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare, faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
