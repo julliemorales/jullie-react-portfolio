@@ -26,15 +26,15 @@ const Navbar = () => {
         <>
             <header className="border-b border-solid border-[#333333] w-[100%]">
                 <div className="flex mx-[100px] my-[30px] justify-between items-center">
-                    <p className="px-[20px] py-[10px] border border-solid border-[#333333] text-2xl hover:bg-[#B16064] hover:text-[#FFDFE0]">
+                    <a className="px-[20px] py-[10px] border border-solid border-[#333333] text-2xl hover:bg-[#B16064] hover:text-[#FFDFE0]" href='/'>
                         jullie angeli.
-                    </p>
+                    </a>
                     <div className="flex gap-[60px]">
                         <ul className="flex gap-[60px] items-center">
                             <li>
                                 <a
                                     className="text-[#333333] hover:text-opacity-50"
-                                    href="#"
+                                    href="/"
                                 >
                                     Home
                                 </a>
@@ -42,7 +42,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     className="text-[#333333] hover:text-opacity-50"
-                                    href="#"
+                                    href="/projects"
                                 >
                                     Projects
                                 </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     className="text-[#333333] hover:text-opacity-50"
-                                    href="#"
+                                    href="#experiences"
                                 >
                                     Experience
                                 </a>
@@ -58,7 +58,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     className="text-[#333333] hover:text-opacity-50"
-                                    href="#"
+                                    href="/"
                                 >
                                     Skills
                                 </a>
@@ -77,9 +77,9 @@ const Navbar = () => {
             </header>
             <nav className="border-b border-solid border-[#333333] w-[100vw] bg-nav">
                 <div className="navWrapper">
-                    <p className="px-[20px] py-[10px] border border-solid border-[#333333] text-2xl hover:bg-[#B16064] hover:text-[#FFDFE0] sm:text-base">
+                    <a href='/' className="px-[20px] py-[10px] border border-solid border-[#333333] text-2xl hover:bg-[#B16064] hover:text-[#FFDFE0] sm:text-base">
                         jullie angeli.
-                    </p>
+                    </a>
                     <div className="right">
                         <div
                             id="nav-icon"
@@ -94,12 +94,14 @@ const Navbar = () => {
                                 <a
                                     href="#projects"
                                     className={`${isOpen ? 'open' : ''}`}
+                                    onClick={()=>setIsOpen(false)}
                                 >
                                     My Projects
                                 </a>
                                 <a
                                     href="#experiences"
                                     className={`${isOpen ? 'open' : ''}`}
+                                    onClick={()=>setIsOpen(false)}
                                 >
                                     My Experiences
                                 </a>
@@ -120,6 +122,7 @@ const Navbar = () => {
                                 <a
                                     href="https://www.linkedin.com/in/moralesjullie/"
                                     className={`${isOpen ? 'open' : ''}`}
+                                    target="_blank"
                                 >
                                     <img
                                         className="filter-pink"

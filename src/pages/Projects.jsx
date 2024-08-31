@@ -1,7 +1,9 @@
 import Layout from './Layout';
-import { faDownload, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare, faDownload, faEnvelope, faLocation, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useEffect, useState } from 'react';
+import Footer from '../components/Footer';
+import Contact from '../components/Contact';
 
 const Projects = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -127,7 +129,18 @@ const Projects = () => {
                     </div>
                 </div>
             </nav>
-            <>ADD PROJECTS HERE</>
+            <section>
+                <h2 className="text-4xl font-medium">
+                    My <span className="text-[#B16064]">Projects.</span>
+                </h2>
+                <div>
+                    
+                </div>
+            </section>
+            <div className='flex flex-col w-full'>
+                <Contact />
+                <Footer />
+            </div>
         </Layout>
     );
 };

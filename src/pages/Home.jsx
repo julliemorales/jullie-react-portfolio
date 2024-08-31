@@ -1,10 +1,21 @@
-import { faArrowUpRightFromSquare, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare, faDownload, faEnvelope, faLocation, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Contact from '../components/Contact';
 import Layout from './Layout';
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 import myProfileImage from '../assets/img/jullie-img.png';
+import figmaLogo from '../assets/img/figma.png'
+import htmlLogo from '../assets/img/html.png'
+import cssLogo from '../assets/img/css.png'
+import jsLogo from '../assets/img/js.png'
+import tailwindLogo from '../assets/img/tailwind.png'
+import bootstrapLogo from '../assets/img/bootstrap.png'
+import psLogo from '../assets/img/ps.png'
+import aiLogo from '../assets/img/ai.png'
+import linkedIn from '../assets/img/linkedin.svg'
 import runDelaunay from '../utils/delaunayBackground';
 
 // TODO: Import images directly
@@ -21,7 +32,7 @@ const Home = () => {
     return (
         <Layout>
             <Navbar />
-            <section className="flex flex-col gap-[30px] justify-center items-start w-[80%] mt-[150px] lg:mt-[unset] items-center md:items-start">
+            <section className="flex flex-col gap-[30px] justify-center items-start w-[80%] mt-[150px] lg:mt-[unset] items-center md:items-center">
                 <div className="flex gap-[30px] flex-col md:flex-row items-center md:items-start">
                     <div>
                         <img
@@ -38,7 +49,7 @@ const Home = () => {
                             <p className="lg:text-[16px] text-[14px]">
                                 Hello! I&apos;m
                                 <span className="font-bold text-[#B16064] lg:text-[16px] text-[14px]">
-                                    Jullie Angeli S. Morales
+                                &nbsp;Jullie Angeli S. Morales
                                 </span>
                                 , a dedicated web designer with over a year of experience in
                                 creating visually stunning and user-friendly designs. I specialize
@@ -59,8 +70,8 @@ const Home = () => {
                                 </a>
                                 <a href="https://www.linkedin.com/in/moralesjullie/">
                                     <img
-                                        src="/src/assets/img/linkedin.svg"
-                                        alt="LinkedIn"
+                                    src={linkedIn}
+                                    alt="LinkedIn"
                                     />
                                 </a>
                             </div>
@@ -101,10 +112,10 @@ const Home = () => {
             >
                 <div>
                     <h2 className="text-4xl font-medium">
-                        My <span className="text-[#B16064]">Web Design Projects.</span>
+                        My <span className="text-[#B16064]">Projects.</span>
                     </h2>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-[60px] px-[200px] border-x border-solid border-[#333333]">
+                <div className="flex flex-col justify-center items-center gap-[60px] lg:px-[200px] lg:border-x lg:border-solid lg:border-[#333333]">
                     <div className="flex flex-col justify-center items-center gap-[30px] max-w-[600px] pb-[60px] border-b border-solid border-[#b0b0b0]">
                         <div className="w-[90vw] lg:w-[100%]">
                             <video
@@ -115,7 +126,7 @@ const Home = () => {
                             />
                         </div>
                         <div className="flex flex-col justify-center items-center gap-[30px]">
-                            <div className="flex flex-col justify-center items-center gap-[10px]">
+                            <div className="flex flex-col justify-center items-center gap-[10px] max-w-[90vw]">
                                 <p className="font-semibold">Mari Fortune Landing Page</p>
                                 <p className="text-center font-light">
                                     A landing page for a Tarot reading business in Japan. Its
@@ -127,13 +138,13 @@ const Home = () => {
                                 <div>
                                     <a
                                         className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]"
-                                        href="https://lp.mari-fortune.jp"
+                                        href="https://lp.mari-fortune.jp" target='_blank'
                                     >
                                         <p className="font-semibold">Website</p>
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
                                 </div>
-                                <div>
+                                {/* <div>
                                     <a
                                         className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]"
                                         href="#"
@@ -141,12 +152,12 @@ const Home = () => {
                                         <p className="font-semibold">Figma File</p>
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col justify-center items-center gap-[30px] max-w-[600px] pb-[60px] border-b border-solid border-[#b0b0b0]">
-                        <div>
+                        <div className="w-[90vw] lg:w-[100%]">
                             <video
                                 width={600}
                                 height={300}
@@ -155,7 +166,7 @@ const Home = () => {
                             />
                         </div>
                         <div className="flex flex-col justify-center items-center gap-[30px]">
-                            <div className="flex flex-col justify-center items-center gap-[10px]">
+                            <div className="flex flex-col justify-center items-center gap-[10px] max-w-[90vw]">
                                 <p className="font-semibold">IAHome</p>
                                 <p className="text-center font-light">
                                     An MEO website for a company that handles all types of home
@@ -168,13 +179,13 @@ const Home = () => {
                                 <div>
                                     <a
                                         className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]"
-                                        href="https://purpledingo3.sakura.ne.jp/iahome/"
+                                        href="https://purpledingo3.sakura.ne.jp/iahome/" target='_blank'
                                     >
                                         <p className="font-semibold">Website</p>
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
                                 </div>
-                                <div>
+                                {/* <div>
                                     <a
                                         className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]"
                                         href="#"
@@ -182,12 +193,12 @@ const Home = () => {
                                         <p className="font-semibold">Figma File</p>
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col justify-center items-center gap-[30px] max-w-[600px] pb-[60px] border-b border-solid border-[#b0b0b0]">
-                        <div>
+                        <div className="w-[90vw] lg:w-[100%]">
                             <video
                                 width={600}
                                 height={300}
@@ -196,7 +207,7 @@ const Home = () => {
                             />
                         </div>
                         <div className="flex flex-col justify-center items-center gap-[30px]">
-                            <div className="flex flex-col justify-center items-center gap-[10px]">
+                            <div className="flex flex-col justify-center items-center gap-[10px] max-w-[90vw]">
                                 <p className="font-semibold">Nagoya Sumiya</p>
                                 <p className="text-center font-light">
                                     A MEO website tailored for a restaurant specializing in
@@ -210,13 +221,13 @@ const Home = () => {
                                 <div>
                                     <a
                                         className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]"
-                                        href="#"
+                                        href="https://nagoya-sumiya.jp" target='_blank'
                                     >
                                         <p className="font-semibold">Website</p>
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
                                 </div>
-                                <div>
+                                {/* <div>
                                     <a
                                         className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]"
                                         href="#"
@@ -224,7 +235,7 @@ const Home = () => {
                                         <p className="font-semibold">Figma File</p>
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -244,6 +255,7 @@ const Home = () => {
             >
                 <canvas
                     id="stars"
+                    className='h-[2000px]'
                     ref={canvasRef}
                 >
                     {' '}
@@ -258,17 +270,17 @@ const Home = () => {
                             <div className="flex flex-col gap-[20px]">
                                 <div className="flex flex-col gap-[5px]">
                                     <div className="absolute w-3 h-3 bg-pink-200 rounded-full mt-1.5 left-[-5px] border border-white border-white-200 bg-pink-200" />
-                                    <div className="font-base text-[#FFDFE0]">
+                                    <div className="font-base text-xl text-[#FFDFE0]">
                                         Web Designer / Junior Web Developer
                                     </div>
-                                    <div className="text-xs font-light text-[#e8979b]">
+                                    <div className="font-light text-[#e8979b]">
                                         Rightcore Inc. |{' '}
                                         <span className="text-[#FFDFE0] font-thin">
                                             March 2023 - Present
                                         </span>
                                     </div>
                                 </div>
-                                <ul className="text-xs font-extralight text-[#FFDFE0] list-disc flex flex-col gap-[5px]">
+                                <ul className="font-extralight text-[#FFDFE0] list-disc flex flex-col gap-[5px] text-sm lg:text-base">
                                     <li>
                                         Designed websites, posters, and logos using mainly Figma and
                                         sometimes Photoshop, Illustrator, and Canva by
@@ -291,20 +303,20 @@ const Home = () => {
                                     src="/src/assets/img/cert.PNG"
                                     alt="KodeGo Certificate"
                                 />
-                                <div>
+                                <div className="flex flex-col gap-[20px]">
                                     <div className="flex flex-col gap-[5px]">
                                         <div className="absolute w-3 h-3 bg-pink-200 rounded-full mt-1.5 left-[-5px] border border-white border-white-200 bg-pink-200" />
-                                        <div className="font-base text-[#FFDFE0]">
+                                        <div className="font-base text-xl text-[#FFDFE0]">
                                             Full-Stack Web Development Bootcamp
                                         </div>
-                                        <div className="text-xs font-light text-[#e8979b]">
+                                        <div className="font-light text-[#e8979b]">
                                             Kodego |{' '}
                                             <span className="text-[#FFDFE0] font-thin">
                                                 July 2022 - October 2022
                                             </span>
                                         </div>
                                     </div>
-                                    <ul className="text-xs font-extralight text-[#FFDFE0] list-disc flex flex-col gap-[5px]">
+                                    <ul className="font-extralight text-[#FFDFE0] list-disc flex flex-col gap-[5px] text-sm lg:text-base">
                                         <li>
                                             Learned the basics of HTML, CSS, VanillaJS, ReactJS,
                                             NodeJS, etc.
@@ -319,17 +331,17 @@ const Home = () => {
                             <div className="flex flex-col gap-[20px]">
                                 <div className="flex flex-col gap-[5px]">
                                     <div className="absolute w-3 h-3 bg-pink-200 rounded-full mt-1.5 left-[-5px] border border-white border-white-200 bg-pink-200" />
-                                    <div className="font-base text-[#FFDFE0]">
+                                    <div className="font-base text-xl text-[#FFDFE0]">
                                         Cloud Tech Support New Associate / IT Operations Associate
                                     </div>
-                                    <div className="text-xs font-light text-[#e8979b]">
+                                    <div className="font-light text-[#e8979b]">
                                         Accenture Philippines Inc. |{' '}
                                         <span className="text-[#FFDFE0] font-thin">
                                             October 2020 - July 2022
                                         </span>
                                     </div>
                                 </div>
-                                <ul className="text-xs font-extralight text-[#FFDFE0] list-disc flex flex-col gap-[5px]">
+                                <ul className="font-extralight text-[#FFDFE0] list-disc flex flex-col gap-[5px] text-sm lg:text-base">
                                     <li>Technical/Operations Support of the Client.</li>
                                     <li>Was one of the Top Performers in our team.</li>
                                     <li>
@@ -345,6 +357,20 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <section className='flex items-center justify-center flex-wrap gap-[50px] lg:gap-[60px] max-w-[80vw] lg:max-w-[1000px]'>
+                <img className='h-[50px] lg-h-[100px]' src={figmaLogo} alt="Figma Logo" />
+                <img className='h-[50px] lg-h-[100px]' src={htmlLogo} alt="HTML5 Logo" />
+                <img className='h-[50px] lg-h-[100px]' src={cssLogo} alt="CSS Logo" />
+                <img className='h-[50px] lg-h-[100px]' src={jsLogo} alt="JavaScript Logo" />
+                <img className='h-[50px] lg-h-[100px]' src={tailwindLogo} alt="TailwindCSS Logo" />
+                <img className='h-[50px] lg-h-[100px]' src={bootstrapLogo} alt="Bootstrap Logo" />
+                <img className='h-[50px] lg-h-[100px]' src={psLogo} alt="Photoshop Logo" />
+                <img className='h-[50px] lg-h-[100px]' src={aiLogo} alt="Illustrator Logo" />
+            </section>
+            <div className='flex flex-col w-full'>
+                <Contact />
+                <Footer />
+            </div>
         </Layout>
     );
 };
