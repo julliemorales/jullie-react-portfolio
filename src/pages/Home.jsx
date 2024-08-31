@@ -259,7 +259,7 @@ const Home = () => {
             >
                 <canvas
                     id="stars"
-                    className='h-[2000px]'
+                    className='h-[2000px] lg:h-[1800px]'
                     ref={canvasRef}
                 >
                     {' '}
