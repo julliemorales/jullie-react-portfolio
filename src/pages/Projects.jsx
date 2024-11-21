@@ -31,6 +31,21 @@ import web12 from '../assets/img/web12.png'
 import web13 from '../assets/img/web13.png'
 import web14 from '../assets/img/web14.png'
 import web15 from '../assets/img/web15.png'
+import web16 from '../assets/img/web16.png'
+import web17 from '../assets/img/web17.png'
+import web18 from '../assets/img/web18.png'
+import web19 from '../assets/img/web19.png'
+import web20 from '../assets/img/web20.png'
+import web21 from '../assets/img/web21.png'
+import web22 from '../assets/img/web22.png'
+import web23 from '../assets/img/web23.png'
+import web24 from '../assets/img/web24.png'
+import web25 from '../assets/img/web25.png'
+import web26 from '../assets/img/web26.png'
+import web27 from '../assets/img/web27.png'
+import web28 from '../assets/img/web28.png'
+import web29 from '../assets/img/web29.png'
+import web30 from '../assets/img/web30.png'
 import logo01 from '../assets/img/logo01.png'
 import logo02 from '../assets/img/logo02.png'
 import logo03 from '../assets/img/logo03.png'
@@ -439,7 +454,7 @@ const Projects = () => {
             </section>
             <section className='flex flex-col justify-center items-center gap-[60px]'>
                 <h2 className="lg:text-4xl font-medium">
-                    Other <span className="text-[#B16064]">Projects.</span>
+                    Personal <span className="text-[#B16064]">Projects.</span>
                 </h2>
                 <div className='flex flex-col justify-center items-center gap-[100px]'>
                     <div className='w-[80vw] flex flex-col justify-center items-center gap-[20px] lg:gap-[30px]'>
@@ -449,17 +464,17 @@ const Projects = () => {
                         <div className='flex flex-wrap justify-center items-center gap-[20px] lg:gap-[30px]'>
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web01}
+                                src={web16}
                                 alt="Web Design #1 Part 1"
                             />
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web02}
+                                src={web17}
                                 alt="Web Design #1 Part 2"
                             />
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web03}
+                                src={web18}
                                 alt="Web Design #1 Part 3"
                             />
                         </div>
@@ -471,17 +486,17 @@ const Projects = () => {
                         <div className='flex flex-wrap justify-center items-center gap-[20px] lg:gap-[30px]'>
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web04}
+                                src={web19}
                                 alt="Web Design #2 Part 1"
                             />
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web05}
+                                src={web20}
                                 alt="Web Design #2 Part 2"
                             />
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web06}
+                                src={web21}
                                 alt="Web Design #2 Part 3"
                             />
                         </div>
@@ -493,17 +508,17 @@ const Projects = () => {
                         <div className='flex flex-wrap justify-center items-center gap-[20px] lg:gap-[30px]'>
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web07}
+                                src={web22}
                                 alt="Web Design #3 Part 1"
                             />
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web08}
+                                src={web23}
                                 alt="Web Design #3 Part 2"
                             />
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web09}
+                                src={web24}
                                 alt="Web Design #3 Part 3"
                             />
                         </div>
@@ -515,17 +530,17 @@ const Projects = () => {
                         <div className='flex flex-wrap justify-center items-center gap-[20px] lg:gap-[30px]'>
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web10}
+                                src={web25}
                                 alt="Web Design #4 Part 1"
                             />
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web11}
+                                src={web26}
                                 alt="Web Design #4 Part 2"
                             />
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web12}
+                                src={web27}
                                 alt="Web Design #4 Part 3"
                             />
                         </div>
@@ -537,18 +552,128 @@ const Projects = () => {
                         <div className='flex flex-wrap justify-center items-center gap-[20px] lg:gap-[30px]'>
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web13}
+                                src={web28}
                                 alt="Web Design #5 Part 1"
                             />
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web14}
+                                src={web29}
                                 alt="Web Design #5 Part 2"
                             />
                             <img
                                 className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
-                                src={web15}
+                                src={web30}
                                 alt="Web Design #5 Part 3"
+                            />
+                        </div>
+                    </div>
+                    <div className='w-[80vw] flex flex-col justify-center items-center gap-[20px] lg:gap-[30px]'>
+                        <div className='flex justify-center w-full py-[10px] bg-[#B16064] text-[12px] lg:text-[24px] font-medium bg-opacity-25'>
+                            <p>Web Design #6</p>
+                        </div>
+                        <div className='flex flex-wrap justify-center items-center gap-[20px] lg:gap-[30px]'>
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web01}
+                                alt="Web Design #6 Part 1"
+                            />
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web02}
+                                alt="Web Design #6 Part 2"
+                            />
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web03}
+                                alt="Web Design #6 Part 3"
+                            />
+                        </div>
+                    </div>
+                    <div className='w-[80vw] flex flex-col justify-center items-center gap-[20px] lg:gap-[30px]'>
+                        <div className='flex justify-center w-full py-[10px] bg-[#B16064] text-[12px] lg:text-[24px] font-medium bg-opacity-25'>
+                            <p>Web Design #7</p>
+                        </div>
+                        <div className='flex flex-wrap justify-center items-center gap-[20px] lg:gap-[30px]'>
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web04}
+                                alt="Web Design #7 Part 1"
+                            />
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web05}
+                                alt="Web Design #7 Part 2"
+                            />
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web06}
+                                alt="Web Design #7 Part 3"
+                            />
+                        </div>
+                    </div>
+                    <div className='w-[80vw] flex flex-col justify-center items-center gap-[20px] lg:gap-[30px]'>
+                        <div className='flex justify-center w-full py-[10px] bg-[#B16064] text-[12px] lg:text-[24px] font-medium bg-opacity-25'>
+                            <p>Web Design #8</p>
+                        </div>
+                        <div className='flex flex-wrap justify-center items-center gap-[20px] lg:gap-[30px]'>
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web07}
+                                alt="Web Design #8 Part 1"
+                            />
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web08}
+                                alt="Web Design #8 Part 2"
+                            />
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web09}
+                                alt="Web Design #8 Part 3"
+                            />
+                        </div>
+                    </div>
+                    <div className='w-[80vw] flex flex-col justify-center items-center gap-[20px] lg:gap-[30px]'>
+                        <div className='flex justify-center w-full py-[10px] bg-[#B16064] text-[12px] lg:text-[24px] font-medium bg-opacity-25'>
+                            <p>Web Design #9</p>
+                        </div>
+                        <div className='flex flex-wrap justify-center items-center gap-[20px] lg:gap-[30px]'>
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web10}
+                                alt="Web Design #9 Part 1"
+                            />
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web11}
+                                alt="Web Design #9 Part 2"
+                            />
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web12}
+                                alt="Web Design #9 Part 3"
+                            />
+                        </div>
+                    </div>
+                    <div className='w-[80vw] flex flex-col justify-center items-center gap-[20px] lg:gap-[30px]'>
+                        <div className='flex justify-center w-full py-[10px] bg-[#B16064] text-[12px] lg:text-[24px] font-medium bg-opacity-25'>
+                            <p>Web Design #10</p>
+                        </div>
+                        <div className='flex flex-wrap justify-center items-center gap-[20px] lg:gap-[30px]'>
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web13}
+                                alt="Web Design #10 Part 1"
+                            />
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web14}
+                                alt="Web Design #10 Part 2"
+                            />
+                            <img
+                                className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+                                src={web15}
+                                alt="Web Design #10 Part 3"
                             />
                         </div>
                     </div>
