@@ -12,7 +12,7 @@ const DesignModal = ({ image, onClose }) => {
 
   return (
     <div
-      className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[99] transition-all duration-300 ease-in-out"
+      className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-[999] transition-all duration-300 ease-in-out"
       onClick={onClose}
     >
       <FontAwesomeIcon
