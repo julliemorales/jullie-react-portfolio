@@ -44,7 +44,7 @@ const DesignContainer = ({
       <div className="flex justify-center w-full py-[10px] bg-[#B16064] text-[12px] lg:text-[24px] font-medium bg-opacity-25">
         <p>{title}</p>
       </div>
-      <div className="flex flex-wrap justify-center items-center gap-[20px] lg:gap-[30px]">
+      <div className="flex flex-wrap justify-center items-center gap-[20px] lg:gap-[30px] designHover">
         {images.map((image, index) => {
           switch (type) {
             case "web":

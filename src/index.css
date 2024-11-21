@@ -621,3 +621,12 @@ nav {
       width: 100%;
     }
   }
+
+  .designHover {
+    transition: transform .2s;
+  }
+
+  .designHover:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }

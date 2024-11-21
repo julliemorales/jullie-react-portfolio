@@ -22,7 +22,7 @@ const DesignModal = ({ image, onClose }) => {
         onClick={onClose}
       />
       <div
-        className={`rounded-lg overflow-y-scroll h-[calc(100vh-300px)] w-11/12 transition-transform duration-500 ease-in-out scale-100 ${
+        className={`rounded-lg overflow-y-scroll h-[calc(100vh-50px)] w-11/12 transition-transform duration-500 ease-in-out scale-100 ${
           isImageLoaded ? "scale-100" : "scale-50"
         } custom-scrollbar`}
       >

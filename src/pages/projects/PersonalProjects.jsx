@@ -41,6 +41,8 @@ import japaneseRestaurant from "../../assets/img/newprojects/japanese-restaurant
 import koreanBeauty from "../../assets/img/newprojects/korean-beauty.jpg";
 import koreanBeauty2 from "../../assets/img/newprojects/korean-beauty_ver02.jpg";
 import poleDanceStudio from "../../assets/img/newprojects/pole-dance-studio.jpg";
+import construction from "../../assets/img/newprojects/construction.png";
+import corporate from "../../assets/img/newprojects/corporate.png";
 
 import logo01 from "../../assets/img/logo01.png";
 import logo02 from "../../assets/img/logo02.png";
@@ -71,37 +73,37 @@ const designs = [
   },
   {
     images: [web25, web26, web27],
-    fullImage: interiorDesign,
+    fullImage: japaneseRestaurant,
     title: "Web Design #4",
   },
   {
     images: [web28, web29, web30],
-    fullImage: japaneseRestaurant,
+    fullImage: interiorDesign,
     title: "Web Design #5",
   },
   {
     images: [web01, web02, web03],
-    fullImage: koreanBeauty,
+    fullImage: poleDanceStudio,
     title: "Web Design #6",
   },
   {
     images: [web04, web05, web06],
-    fullImage: koreanBeauty2,
+    fullImage: koreanBeauty,
     title: "Web Design #7",
   },
   {
     images: [web07, web08, web09],
-    fullImage: poleDanceStudio,
+    fullImage: koreanBeauty2,
     title: "Web Design #8",
   },
   {
     images: [web10, web11, web12],
-    fullImage: poleDanceStudio,
+    fullImage: corporate,
     title: "Web Design #9",
   },
   {
     images: [web13, web14, web15],
-    fullImage: poleDanceStudio,
+    fullImage: construction,
     title: "Web Design #10",
   },
 ];
