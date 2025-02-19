@@ -2,7 +2,7 @@
 const WebImages = ({ src, title, openModal, fullImage }) => {
   return (
     <img
-      className="w-[80vw] rounded-[20px] lg:w-[400px] h-[600px] object-cover object-top"
+      className="w-[30vw] h-[200px] rounded-[10px] lg:w-[30vw] lg:rounded-[20px] lg:w-[400px] lg:h-[600px] object-cover object-top"
       src={src}
       alt={title}
       onClick={() => openModal(fullImage)}

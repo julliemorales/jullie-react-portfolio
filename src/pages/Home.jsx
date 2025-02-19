@@ -65,16 +65,16 @@ images: [web34, web35, web36],
 fullImage: corporate2,
 title: "Corporate Web Design",
 },
-{
-images: [web37, web38, web39],
-fullImage: mensapparel,
-title: "Men's Fashion Web Design",
-},
-{
-images: [web19, web20, web21],
-fullImage: cafe,
-title: "Cafe Web Design",
-},
+// {
+// images: [web37, web38, web39],
+// fullImage: mensapparel,
+// title: "Men's Fashion Web Design",
+// },
+// {
+// images: [web19, web20, web21],
+// fullImage: cafe,
+// title: "Cafe Web Design",
+// },
 ];
 
 const Home = () => {

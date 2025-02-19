@@ -176,7 +176,7 @@ const PersonalProjects = () => {
         {/* <h2 className="lg:text-4xl font-medium">
           Personal <span className="text-[#B16064]">Projects.</span>
         </h2> */}
-        <div className="flex flex-col justify-center items-center gap-[100px]">
+        <div className="flex flex-col justify-center items-center gap-[60px] lg:gap-[100px]">
           {designs.map((design, index) => (
             <DesignContainer
               key={index}
