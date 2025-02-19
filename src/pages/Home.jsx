@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 import Layout from './Layout';
 import { Link } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import myProfileImage from '../assets/img/jullie-img.png';
 import certification from '../assets/img/certification.png';
 import figmaLogo from '../assets/img/figma.png'
@@ -17,13 +17,65 @@ import bootstrapLogo from '../assets/img/bootstrap.png'
 import psLogo from '../assets/img/ps.png'
 import aiLogo from '../assets/img/ai.png'
 import linkedIn from '../assets/img/linkedin.svg'
-import vid01 from '../assets/vid/mari-fortune.webm'
-import vid02 from '../assets/vid/iahome.webm'
-import vid03 from '../assets/vid/nagoya-sumiya.webm'
+// import vid01 from '../assets/vid/mari-fortune.webm'
+// import vid02 from '../assets/vid/iahome.webm'
+// import vid03 from '../assets/vid/nagoya-sumiya.webm'
 import runDelaunay from '../utils/delaunayBackground';
 import pdf from '../assets/files/JULLIE_ANGELI_S_MORALES.pdf'
 
+import DesignContainer from "../components/DesignContainer";
+import DesignModal from "../components/DesignModal";
+
+import web16 from "../assets/img/web16.png";
+import web17 from "../assets/img/web17.png";
+import web18 from "../assets/img/web18.png";
+import web19 from "../assets/img/web19.png";
+import web20 from "../assets/img/web20.png";
+import web21 from "../assets/img/web21.png";
+import web31 from "../assets/img/web31.png";
+import web32 from "../assets/img/web32.png";
+import web33 from "../assets/img/web33.png";
+import web34 from "../assets/img/web34.png";
+import web35 from "../assets/img/web35.png";
+import web36 from "../assets/img/web36.png";
+import web37 from "../assets/img/web37.png";
+import web38 from "../assets/img/web38.png";
+import web39 from "../assets/img/web39.png";
+
+import architecture from "../assets/img/newprojects/architecture.jpg";
+import businessGear from "../assets/img/newprojects/business-gear.jpg";
+import corporate2 from "../assets/img/newprojects/corporate2.jpg";
+import mensapparel from "../assets/img/newprojects/mensapparel.jpg";
+import cafe from "../assets/img/newprojects/cafe.jpg";
 // TODO: Import images directly
+
+const designs = [
+{
+images: [web31, web32, web33],
+fullImage: businessGear,
+title: "Software Solutions Web Design",
+},
+{
+images: [web16, web17, web18],
+fullImage: architecture,
+title: "Architecture Web Design",
+},
+{
+images: [web34, web35, web36],
+fullImage: corporate2,
+title: "Corporate Web Design",
+},
+{
+images: [web37, web38, web39],
+fullImage: mensapparel,
+title: "Men's Fashion Web Design",
+},
+{
+images: [web19, web20, web21],
+fullImage: cafe,
+title: "Cafe Web Design",
+},
+];
 
 const Home = () => {
     const canvasRef = useRef(null);
@@ -33,6 +85,30 @@ const Home = () => {
             runDelaunay(canvasRef.current);
         }
     }, []);
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [modalImage, setModalImage] = useState("");
+
+    const openModal = (image) => {
+    setModalImage(image);
+    setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+    setIsModalOpen(false);
+    };
+
+    useEffect(() => {
+    if (isModalOpen) {
+        document.body.classList.add("overflow-hidden");
+    } else {
+        document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+        document.body.classList.remove("overflow-hidden");
+    };
+    }, [isModalOpen]);
 
     return (
         <Layout>
@@ -56,7 +132,7 @@ const Home = () => {
                                 <span className="font-bold text-[#B16064] lg:text-[16px] text-[14px]">
                                 &nbsp;Jullie Angeli S. Morales
                                 </span>
-                                , a dedicated web designer with over a year of experience in
+                                , a dedicated web designer with 2 years of experience in
                                 creating visually stunning and user-friendly designs. I specialize
                                 in using Figma to bring creative ideas to life and ensure a seamless
                                 user experience.
@@ -122,7 +198,7 @@ const Home = () => {
                         My <span className="text-[#B16064]">Projects.</span>
                     </h2>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-[60px] lg:px-[200px] lg:border-x lg:border-solid lg:border-[#333333]">
+                {/* <div className="flex flex-col justify-center items-center gap-[60px] lg:px-[200px] lg:border-x lg:border-solid lg:border-[#333333]">
                     <div className="flex flex-col justify-center items-center gap-[30px] max-w-[600px] pb-[60px] border-b border-solid border-[#b0b0b0]">
                         <div className="lg:w-[100%]">
                             <video
@@ -151,7 +227,7 @@ const Home = () => {
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
                                 </div>
-                                {/* <div>
+                                <div>
                                     <a
                                         className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]"
                                         href="#"
@@ -159,7 +235,7 @@ const Home = () => {
                                         <p className="font-semibold">Figma File</p>
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -192,7 +268,7 @@ const Home = () => {
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
                                 </div>
-                                {/* <div>
+                                <div>
                                     <a
                                         className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]"
                                         href="#"
@@ -200,7 +276,7 @@ const Home = () => {
                                         <p className="font-semibold">Figma File</p>
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -234,7 +310,7 @@ const Home = () => {
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
                                 </div>
-                                {/* <div>
+                                <div>
                                     <a
                                         className="flex items-center gap-[10px] text-[#B16064] hover:text-[#743d44]"
                                         href="#"
@@ -242,7 +318,7 @@ const Home = () => {
                                         <p className="font-semibold">Figma File</p>
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                                     </a>
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -254,8 +330,29 @@ const Home = () => {
                             See More Projects
                         </Link>
                     </div>
+                </div> */}
+                <div className="flex flex-col justify-center items-center gap-[100px]">
+                {designs.map((design, index) => (
+                    <DesignContainer
+                    key={index}
+                    images={design.images}
+                    fullImage={design.fullImage}
+                    title={design.title}
+                    type="web"
+                    openModal={openModal}
+                    />
+                ))}
                 </div>
+                <div>
+                        <Link
+                            className="px-[20px] py-[10px] border border-solid border-[#333333] hover:bg-[#333333] hover:text-[#FFDFE0]"
+                            to="/projects"
+                        >
+                            See More Projects
+                        </Link>
+                    </div>
             </section>
+            {isModalOpen && <DesignModal image={modalImage} onClose={closeModal} />}
             <section
                 className="relative w-full d-none"
                 id="experiences"

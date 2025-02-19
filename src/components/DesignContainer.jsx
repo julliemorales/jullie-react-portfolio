@@ -20,6 +20,16 @@ const LogoImages = ({ src, title }) => {
     />
   );
 };
+const CoverImages = ({ src, title }) => {
+  return (
+    <img
+      className="w-[30vw] rounded-[20px] lg:w-[500px]"
+      src={src}
+      alt={title}
+      // onClick={() => openModal(src)}
+    />
+  );
+};
 
 const BannerImages = ({ src, title }) => {
   return (
@@ -57,6 +67,15 @@ const DesignContainer = ({
                   openModal={openModal}
                 />
               );
+            case "cover":
+              return (
+                <CoverImages
+                  key={index}
+                  src={image}
+                  title={`${title} Part ${index + 1}`}
+                  openModal={openModal}
+                />
+            );
             case "logo":
               return (
                 <LogoImages
